@@ -29,7 +29,7 @@
       </div>
       <div class="list-box clear">
           <div class="item" v-for="(s,i) in Select" :key="i">
-              <router-link to="">
+              <router-link :to="{path:'/detail',query:{id:s.cid}}">
                   <img :src="`${url}${s.cake_img_small}`" class="item-img">
                   <h3>{{s.title}}
                       <span class="new">新品</span>
